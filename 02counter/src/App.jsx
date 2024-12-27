@@ -5,7 +5,7 @@ import './App.css'
 
 function App() {
 
-  let [counter, setCounter] = useState(15)
+  const [counter, setCounter] = useState(15)
 
   // let counter = 15
 
@@ -13,7 +13,12 @@ function App() {
     // counter = counter + 1,
     if(counter < 25) {
       setCounter(counter + 1)
-      console.log("Clicked", counter);    
+
+      // interview question
+      // setCounter(preCounter => preCounter + 1)
+      // setCounter(preCounter => preCounter + 1)
+      // setCounter(preCounter => preCounter + 1)
+
     }else{
       console.log("Maximum value reached!");
       
